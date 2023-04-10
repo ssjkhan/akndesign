@@ -5,6 +5,7 @@ import ProjectCard from "@components/ProjectCard";
 import ProjectCard2 from "@components/ProjectCard2";
 import Banner from "@components/Banner";
 import PortfolioArr from "@components/PortfolioArray";
+import AwardsList from "@components/AwardsList";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ProjectCard />
       <ProjectCard2 />
       <PortfolioArr />
+      <AwardsList />
       <Footer />
     </div>
   );
