@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 import ProjectCard from "@components/ProjectCard";
 import ProjectCard2 from "@components/ProjectCard2";
 import Banner from "@components/Banner";
+import PortfolioArr from "@components/PortfolioArray";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Banner />
       <ProjectCard />
       <ProjectCard2 />
-      <div></div>
+      <PortfolioArr />
       <Footer />
     </div>
   );
