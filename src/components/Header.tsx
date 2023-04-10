@@ -13,7 +13,10 @@ export default function Header() {
 
   console.log(showMenu);
   return (
-    <nav className="px-10 py-10 bg-gray-500" ref={ref}>
+    <nav
+      className="sticky sm:px-5 sm:py-5 top-0 px-10 py-10 bg-gray-500"
+      ref={ref}
+    >
       <div className="flex justify-between items-center">
         <button>
           <svg
