@@ -6,10 +6,12 @@ import ProjectCard2 from "@components/ProjectCard2";
 import Banner from "@components/Banner";
 import PortfolioArr from "@components/PortfolioArray";
 import AwardsList from "@components/AwardsList";
+import ClickHere from "@components/ClickHere";
 
 function App() {
   return (
     <div className="App">
+      <ClickHere />
       <Header />
       <Banner />
       <ProjectCard />
