@@ -5,7 +5,6 @@ export default function ClickHere() {
   function handleClick() {
     setShow(!show);
   }
-  console.log(show);
   return (
     <div>
       <div className="w-full bg-gray-500 h-auto flex justify-center text-white">
