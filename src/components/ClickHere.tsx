@@ -37,10 +37,10 @@ export default function ClickHere() {
 
   return (
     <div>
-      <div className="w-full bg-red-500 h-auto flex justify-center text-white">
+      <div className="w-full bg-alexRed h-auto flex justify-center text-white">
         <div onClick={handleClick}>
-          <div className="flex justify-center align-center bg-red-500 border-2 border-white rounded-full">
-            <div className="bg-red-500 rounded-full mr-2 px-2">
+          <div className="flex justify-center align-center bg-alexRed border-2 border-white rounded-full">
+            <div className="bg-alexRed rounded-full mr-2 px-2">
               What's here?
             </div>
             <div className="flex justify-center items-center bg-white rounded-full px-2">
@@ -49,7 +49,7 @@ export default function ClickHere() {
                 style={{
                   transform: `rotate(${calcAngle(leftEye)}deg)`,
                 }}
-                className="w-4 h-4 border-2 border-red-500 rounded-full after:absolute after:w-2 after:h-2 after:bg-red-500 after:rounded-full after:content-[' ']"
+                className="w-4 h-4 border-2 border-alexRed rounded-full after:absolute after:w-2 after:h-2 after:bg-alexRed after:rounded-full after:content-[' ']"
               >
               </div>
               <div
@@ -57,7 +57,7 @@ export default function ClickHere() {
                 style={{
                   transform: `rotate(${calcAngle(leftEye)}deg)`,
                 }}
-                className="w-4 h-4 border-2 border-red-500 rounded-full after:absolute after:w-2 after:h-2 after:bg-red-500 after:rounded-full after:content-[' ']"
+                className="w-4 h-4 border-2 border-alexRed rounded-full after:absolute after:w-2 after:h-2 after:bg-alexRed after:rounded-full after:content-[' ']"
               >
               </div>
             </div>
