@@ -68,7 +68,7 @@ export default function ClickHere() {
       </div>
       <div
         ref={container}
-        className="h-0 transition-all ease-in-out duration-700"
+        className="h-0 transition-all ease-in-out duration-700 overflow-hidden"
       >
         <div
           ref={content}
