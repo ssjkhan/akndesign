@@ -1,13 +1,15 @@
-import { useState } from "react";
-import SideNav from "@components/SideNav";
+import { useRef, useState } from "react";
+import SideNav from "@components/SideMenu";
 import Logo from "@components/Logo";
 import Time from "@components/header/Time";
 
 export default function Header() {
   const [showMenu, setMenu] = useState(false);
+  const sideMenuRef = useRef<HTMLDivElement>(null);
 
   function handleClick() {
     setMenu(!showMenu);
+    sideMenuRef.current?.classList.toggle("translate-x-full");
   }
 
   return (
@@ -33,7 +35,7 @@ export default function Header() {
           </svg>
         </div>
       </div>
-      {showMenu && <SideNav setShow={setMenu} />}
+      <SideNav setShow={setMenu} menuRef={sideMenuRef} />
     </nav>
   );
 }

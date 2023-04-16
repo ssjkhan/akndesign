@@ -1,25 +1,30 @@
 import React from "react";
+import Logo from "@components/Logo";
+
 type SideNavProps = {
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
+  menuRef: React.RefObject<HTMLDivElement>;
 };
 
-export default function SideNav({ setShow }: SideNavProps) {
+export default function SideNav({ setShow, menuRef }: SideNavProps) {
   function handleClose() {
     setShow(false);
+    menuRef.current?.classList.toggle("translate-x-full");
   }
 
   return (
-    <div className="navbar-menu fixed top-0 right-0 bottom-0 w-5/6 max-w-sm z-50 ">
+    <div
+      ref={menuRef}
+      className="navbar-menu fixed top-0 right-0 bottom-0 w-screen sm:max-w-sm z-50 translate-x-full transition-all ease-in-out"
+    >
       <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25">
       </div>
       <nav className="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
-        <div className="flex items-center mb-8">
-          <a className="mr-auto text-2xl font-semibold leading-none" href="#">
-            Logo
-          </a>
-          <button className="navbar-close" onClick={handleClose}>
+        <div className="flex items-center mb-12 sm:mb-16  pb-2 border-b-2 border-alexTeal">
+          <Logo classNames="text-alexRed w-16" />
+          <button className="navbar-close ml-auto" onClick={handleClose}>
             <svg
-              className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              className="h-6 w-6 text-slate-900 cursor-pointer hover:text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -35,11 +40,11 @@ export default function SideNav({ setShow }: SideNavProps) {
             </svg>
           </button>
         </div>
-        <div>
+        <div className="text-alexRed">
           <ul>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold text-gray-900 hover:bg-gray-50 rounded"
+                className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
                 href="#"
               >
                 Intro
@@ -47,15 +52,23 @@ export default function SideNav({ setShow }: SideNavProps) {
             </li>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold text-gray-900 hover:bg-gray-50 rounded"
+                className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
                 href="#"
               >
                 About
               </a>
             </li>
             <li className="mb-1">
+              <li className="mb-1">
+                <a
+                  className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
+                  href="#"
+                >
+                  Misfits
+                </a>
+              </li>
               <a
-                className="block p-4 text-sm font-semibold text-gray-900 hover:bg-gray-50 rounded"
+                className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
                 href="#"
               >
                 Recent Work
@@ -63,7 +76,7 @@ export default function SideNav({ setShow }: SideNavProps) {
             </li>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold text-gray-900 hover:bg-gray-50 rounded"
+                className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
                 href="#"
               >
                 Awards & Press
@@ -87,7 +100,7 @@ export default function SideNav({ setShow }: SideNavProps) {
             </a>
           </div>
           <p className="mt-6 mb-4 text-sm text-center text-gray-400">
-            <span>© 2023 All rights AKNDesigns</span>
+            <span>© 2023 All rights aknDesigns</span>
           </p>
         </div>
       </nav>
