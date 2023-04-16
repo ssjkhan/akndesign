@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 
-export default function Time() {
+type TimePropsType = {
+  classNames: string;
+};
+
+export default function Time({ classNames }: TimePropsType) {
   const [time, setTime] = useState("00:00 PM");
 
   function updateTime() {
@@ -25,5 +29,5 @@ export default function Time() {
     };
   });
 
-  return <div className="text-alexRed">{time}</div>;
+  return <div className={classNames}>{time}</div>;
 }

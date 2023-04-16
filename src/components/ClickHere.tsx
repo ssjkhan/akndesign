@@ -39,10 +39,10 @@ export default function ClickHere() {
   }, []);
 
   return (
-    <div className="bg-alexRed py-1">
+    <div className="bg-alexRed py-2">
       <div className="w-full h-auto flex justify-center text-white overflow-hidden">
         <div onClick={handleClick}>
-          <div className="flex justify-center align-center bg-alexRed border-[1px] border-white rounded-full">
+          <div className="flex justify-center align-center bg-alexRed border-2 border-white rounded-full">
             <div className="bg-alexRed rounded-full mr-2 px-2">
               What's here?
             </div>
@@ -74,10 +74,10 @@ export default function ClickHere() {
           ref={content}
           className="text-white flex flex-wrap justify-center over-flow-hidden transition-transform ease-in delay-300 duration-300"
         >
-          <div className="basis-full flex justify-center text-2xl pt-4 font-bold">
+          <div className="basis-full flex justify-center text-lg lg:text-2xl pt-4 font-bold">
             Nothin' but our love for you
           </div>
-          <div className="basis-full flex justify-center py-2">
+          <div className="basis-full flex justify-center py-2 text-sm lg:text-base mx-16 lg:mx-auto">
             You're curious. You like to discover. The little things matter. So
             we found a video just for you.
           </div>
