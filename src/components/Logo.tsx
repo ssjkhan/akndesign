@@ -6,10 +6,8 @@ export default function Logo({ classNames }: LogoPropsType) {
   return (
     <div>
       <svg
-        width="151px"
-        height="79px"
         viewBox="0 0 151 79"
-        className={`${classNames}`}
+        className={classNames}
         fill="currentColor"
         stroke="none"
       >
