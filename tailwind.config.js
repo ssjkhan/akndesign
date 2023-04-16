@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         "alexRed": "#FF4501",
+        "alexTeal": "#7FFFD4",
       },
     },
   },
