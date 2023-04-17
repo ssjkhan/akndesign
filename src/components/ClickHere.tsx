@@ -9,7 +9,7 @@ export default function ClickHere() {
   // collapsible component
   function handleClick() {
     container.current?.classList.toggle("h-0");
-    container.current?.classList.toggle("h-44");
+    container.current?.classList.toggle("h-48");
     content.current?.classList.toggle("translate-y-6");
   }
 
@@ -74,10 +74,10 @@ export default function ClickHere() {
           ref={content}
           className="text-white flex flex-wrap justify-center over-flow-hidden transition-transform ease-in delay-300 duration-300"
         >
-          <div className="basis-full flex justify-center text-lg lg:text-2xl pt-4 font-bold">
+          <div className="basis-full flex justify-center text-l lg:text-2xl pt-2 lg:pt-4 font-bold">
             Nothin' but our love for you
           </div>
-          <div className="basis-full flex justify-center py-2 text-sm lg:text-base mx-16 lg:mx-auto">
+          <div className="basis-full flex justify-center py-2 text-xs lg:text-base mx-16 lg:mx-auto">
             You're curious. You like to discover. The little things matter. So
             we found a video just for you.
           </div>

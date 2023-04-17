@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import SideNav from "@components/SideMenu";
+import SideMenu from "@components/SideMenu";
 import Logo from "@components/Logo";
 import Time from "@components/header/Time";
 
@@ -35,7 +35,7 @@ export default function Header() {
           </svg>
         </div>
       </div>
-      <SideNav setShow={setMenu} menuRef={sideMenuRef} />
+      <SideMenu setShow={setMenu} menuRef={sideMenuRef} />
     </nav>
   );
 }

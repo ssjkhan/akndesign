@@ -1,12 +1,12 @@
 import React from "react";
 import Logo from "@components/Logo";
 
-type SideNavProps = {
+type SideMenuProps = {
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
   menuRef: React.RefObject<HTMLDivElement>;
 };
 
-export default function SideNav({ setShow, menuRef }: SideNavProps) {
+export default function SideMenu({ setShow, menuRef }: SideMenuProps) {
   function handleClose() {
     setShow(false);
     menuRef.current?.classList.toggle("translate-x-full");
@@ -59,14 +59,14 @@ export default function SideNav({ setShow, menuRef }: SideNavProps) {
               </a>
             </li>
             <li className="mb-1">
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
-                  href="#"
-                >
-                  Misfits
-                </a>
-              </li>
+              <a
+                className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
+                href="#"
+              >
+                Misfits
+              </a>
+            </li>
+            <li className="mb-1">
               <a
                 className="block p-4 text-sm font-semibold   hover:bg-gray-50 rounded"
                 href="#"
