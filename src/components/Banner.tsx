@@ -1,12 +1,28 @@
-import ViteSVG from "../assets/vite.svg";
+import { useEffect } from "react";
+import Lottie from "lottie-react";
+import AlexIllustration from "@assets/illustrationofme_animated.json";
 
 export default function Banner() {
+  const AnimFragment = (
+    <Lottie
+      id="alexIllustration"
+      animationData={AlexIllustration}
+      className="w-full h-96 mb-16 transform-none"
+    />
+  );
+
+  // remove translate3d component so it doesn't interfere with z-index
+  useEffect(() => {
+    const anim = document
+      .getElementById("alexIllustration")
+      ?.firstChild as HTMLElement;
+    anim.style.transform = "";
+  }, []);
+
   return (
     <section className="py-20">
       <div className="container px-4 mx-auto">
-        <div className="h-96 mb-16 bg-gradient-to-t from-cyan-500 to-blue-500">
-          &nbsp;
-        </div>
+        {AnimFragment}
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex mb-2 items-center justify-center">
             <a className="text-xs text-gray-200" href="#">Home</a>
@@ -18,9 +34,9 @@ export default function Banner() {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5l7 7-7 7"
               >
               </path>
@@ -34,9 +50,9 @@ export default function Banner() {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5l7 7-7 7"
               >
               </path>
