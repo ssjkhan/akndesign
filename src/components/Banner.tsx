@@ -1,20 +1,19 @@
 import { useEffect } from "react";
 import Lottie from "lottie-react";
-import AlexIllustration from "@assets/illustrationofme_animated.json";
+import AlexIllustration from "@assets/alex-animation.json";
 
 export default function Banner() {
   const AnimFragment = (
     <Lottie
       id="alexIllustration"
       animationData={AlexIllustration}
-      className="w-full h-96 mb-16 transform-none"
+      className="w-full h-64 mb-16 transform-none"
     />
   );
 
   // remove translate3d component so it doesn't interfere with z-index
   useEffect(() => {
-    const anim = document
-      .getElementById("alexIllustration")
+    const anim = document.getElementById("alexIllustration")
       ?.firstChild as HTMLElement;
 
     if (!anim) return;
@@ -22,10 +21,10 @@ export default function Banner() {
   }, []);
 
   return (
-    <section className="py-20">
+    <section className="font-testing py-20">
       <div className="container mx-4 mx-auto">
         {AnimFragment}
-        <div className="max-w-2xl mx-auto text-center text-alexRed">
+        <div className="mx-auto text-center text-alexRed">
           <h2 className="mb-6 text-2xl sm:text-4xl lg:text-5xl font-bold font-heading">
             I'm Alexander Neumann
           </h2>

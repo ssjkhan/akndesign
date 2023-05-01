@@ -1,30 +1,26 @@
-import React from "react";
 import Header from "@components/header/Header";
-import Footer from "@components/Footer";
-import ProjectCard from "@components/ProjectCard";
-import ProjectCard2 from "@components/ProjectCard2";
 import Banner from "@components/Banner";
-import PortfolioArr from "@components/PortfolioArray";
 import AwardsList from "@components/AwardsList";
 import ClickHere from "@components/ClickHere";
-import PacmanSidebar from "@components/pacman-sidebar/PacmanSideBar";
 import About from "@components/About";
+import Sidebar from "@components/SideBar";
+import Misfits from "@components/project-cards/MisfitsProject";
+import CityMapper from "@components/project-cards/CityMapper";
 
 function App() {
   return (
-    <>
-      <ClickHere />
-      <Header />
-      <div className="App mx-4 sm:mx-16 lg:mx-64">
+    <div className="App">
+      <div className="w-auto">
+        <ClickHere />
+        <Header />
         <Banner />
         <About />
-        <ProjectCard />
-        <ProjectCard2 />
-        <PortfolioArr />
+        <Misfits />
+        <CityMapper />
         <AwardsList />
-        <Footer />
       </div>
-    </>
+      <Sidebar />
+    </div>
   );
 }
 

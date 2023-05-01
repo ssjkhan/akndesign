@@ -1,19 +1,17 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import SideMenu from "@components/SideMenu";
 import Logo from "@components/Logo";
 import Time from "@components/header/Time";
 
 export default function Header() {
-  const [showMenu, setMenu] = useState(false);
   const sideMenuRef = useRef<HTMLDivElement>(null);
 
   function handleClick() {
-    setMenu(!showMenu);
     sideMenuRef.current?.classList.toggle("translate-x-full");
   }
 
   return (
-    <nav className="sticky top-0 bg-white w-full py-2 border-b-2 border-alexRed">
+    <nav className="bg-white w-full py-2 border-b-2 border-alexRed">
       <div className="flex justify-between items-center gap-12 mx-4 sm:mx-8 lg:mx-32">
         <Logo classNames="text-alexRed w-12 sm:w-16 " />
         <Time classNames="text-alexRed hidden sm:block sm:text-sm ml-auto" />
@@ -24,7 +22,7 @@ export default function Header() {
           Ready to Hire
         </div>
 
-        <div className="text-alexRed block" onClick={handleClick}>
+        <div className="text-alexRed block md:hidden" onClick={handleClick}>
           <svg
             className="w-4 "
             fill="currentColor "
@@ -35,7 +33,7 @@ export default function Header() {
           </svg>
         </div>
       </div>
-      <SideMenu setShow={setMenu} menuRef={sideMenuRef} />
+      <SideMenu menuRef={sideMenuRef} />
     </nav>
   );
 }
