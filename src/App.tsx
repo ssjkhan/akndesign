@@ -10,7 +10,7 @@ import CityMapper from "@components/project-cards/CityMapper";
 function App() {
   return (
     <div className="App">
-      <div className="w-auto">
+      <div className="w-auto md:mr-12">
         <ClickHere />
         <Header />
         <Banner />

@@ -17,10 +17,13 @@ export default function SideMenu({ menuRef }: SideMenuProps) {
       <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25">
       </div>
       <nav className="relative flex flex-col py-6 px-6 w-full h-full bg-alexTeal border-r overflow-y-auto">
-        <div className="flex items-center mb-12 sm:mb-16  pb-2 border-b-2 border-alexTeal">
+        <div className="flex items-center mb-12 sm:mb-16  pb-2 border-b-2 border-alexTeal font-blogh lg:py-20">
+          <div className="text-alexRed text-2xl lg:text-4xl mr-auto px-4">
+            MENU
+          </div>
           <button className="navbar-close" onClick={handleClose}>
             <svg
-              className="h-6 w-6 text-slate-900 cursor-pointer hover:text-gray-500"
+              className="h-6 w-6 text-slate-900 cursor-pointer hover:text-alexRed"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -35,13 +38,12 @@ export default function SideMenu({ menuRef }: SideMenuProps) {
               </path>
             </svg>
           </button>
-          <div className="text-alexRed text-2xl ml-auto">Menu</div>
         </div>
-        <div className="text-alexRed">
+        <div className="text-alexRed font-blogh">
           <ul>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold hover:underline rounded"
+                className="block p-4 text-sm md:text-xl border-b-[1px] border-alexRed lg:text-4xl"
                 href="#"
               >
                 Intro
@@ -49,7 +51,7 @@ export default function SideMenu({ menuRef }: SideMenuProps) {
             </li>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold hover:underline rounded"
+                className="block p-4 text-sm md:text-xl border-b-[1px] border-alexRed lg:text-4xl"
                 href="#"
               >
                 About
@@ -57,7 +59,7 @@ export default function SideMenu({ menuRef }: SideMenuProps) {
             </li>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold hover:underline rounded"
+                className="block p-4 text-sm md:text-xl border-b-[1px] border-alexRed lg:text-4xl"
                 href="#"
               >
                 Misfits
@@ -65,7 +67,7 @@ export default function SideMenu({ menuRef }: SideMenuProps) {
             </li>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold hover:underline rounded"
+                className="block p-4 text-sm md:text-xl border-b-[1px] border-alexRed lg:text-4xl"
                 href="#"
               >
                 Recent Work
@@ -73,7 +75,7 @@ export default function SideMenu({ menuRef }: SideMenuProps) {
             </li>
             <li className="mb-1">
               <a
-                className="block p-4 text-sm font-semibold hover:underline rounded"
+                className="block p-4 text-sm md:text-xl border-b-[1px] border-alexRed lg:text-4xl"
                 href="#"
               >
                 Awards & Press
@@ -97,7 +99,7 @@ export default function SideMenu({ menuRef }: SideMenuProps) {
             </a>
           </div>
           <p className="mt-6 mb-4 text-sm text-center text-alexRed">
-            <span>© 2023 All rights aknDesigns</span>
+            <span>© 2023 All rights aknDesign</span>
           </p>
         </div>
       </nav>

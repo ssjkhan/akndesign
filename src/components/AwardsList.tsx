@@ -1,5 +1,3 @@
-import ViteSVG from "../assets/vite.svg";
-
 export default function AwardsList() {
   const awardsList = [
     "$10k CAD Financial Grant, May 2022",
@@ -11,14 +9,17 @@ export default function AwardsList() {
   return (
     <section className="py-20">
       <div className="px-4 flex">
-        <div className="mb-16 text-center w-full pt-24 mx-4">
-          <div className="mt-2 text-alexRed text-4xl lg:text-5xl font-bold font-heading">
+        <div className="mb-16 text-center w-full pt-24 ml-4">
+          <div className="mt-2 text-alexRed text-4xl lg:text-5xl font-bold font-heading font-blogh">
             Awards and Press
           </div>
         </div>
-        <div className="ml-4 mb-8 pt-8 w-full">
-          {awardsList.map((award) => (
-            <div className="text-alexRed pt-4 pb-6 text-2xl border-b-2 border-alexRed">
+        <div className="mb-8 pt-8 w-full">
+          {awardsList.map((award, index) => (
+            <div
+              className="text-alexRed pt-4 pb-6 text-2xl border-b-2 border-alexRed font-roobert"
+              key={index}
+            >
               {award}
             </div>
           ))}

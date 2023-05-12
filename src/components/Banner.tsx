@@ -21,7 +21,7 @@ export default function Banner() {
   }, []);
 
   return (
-    <section className="font-testing py-20">
+    <section className="font-roobert py-20">
       <div className="container mx-4 mx-auto">
         {AnimFragment}
         <div className="mx-auto text-center text-alexRed">

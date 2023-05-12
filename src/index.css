@@ -1,10 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {}
+@font-face {
+  font-family: "Blogh";
+  src: url("./fonts/Blogh.otf");
+}
+
+@font-face {
+  font-family: "GTAlpina";
+  src: url("./fonts/GT-Alpina-Standard-Bold-Italic-Trial.otf");
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url("./fonts/Roobert-Medium.otf");
+}
+
+@font-face {
+  font-family: "Reckless";
+  src: url("./fonts/Reckless-Light.woff");
+}

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="bg-alexRed text-white py-24 ">
+    <div className="bg-alexRed text-white py-24 font-roobert">
       <div className="mx-44 text-2xl">
         My client-based work has received the attention of Buzzfeed, the Globe
         and Mail, and Wallpaper* Magazine.

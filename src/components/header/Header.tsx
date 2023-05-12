@@ -11,7 +11,7 @@ export default function Header() {
   }
 
   return (
-    <nav className="bg-white w-full py-2 border-b-2 border-alexRed">
+    <nav className="bg-white w-full py-2 border-b-2 border-alexRed font-roobert">
       <div className="flex justify-between items-center gap-12 mx-4 sm:mx-8 lg:mx-32">
         <Logo classNames="text-alexRed w-12 sm:w-16 " />
         <Time classNames="text-alexRed hidden sm:block sm:text-sm ml-auto" />
