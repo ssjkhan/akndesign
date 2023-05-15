@@ -1,198 +1,28 @@
-import ViteSVG from "../assets/vite.svg";
-
 export default function AwardsList() {
+  const awardsList = [
+    "$10k CAD Financial Grant, May 2022",
+    "Essen Speil 2019 and Top Drawer 2020 for Misfits",
+    "ITV Studios: How to Spend it Well",
+    "Now Play This at Somerset House",
+    "London Design Festival 2017",
+  ];
   return (
     <section className="py-20">
-      <div className="container px-4 mx-auto">
-        <div className="mb-16 text-center">
-          <span className="ext-sm text-gray-200 uppercase">
+      <div className="px-4 flex">
+        <div className="mb-16 text-center w-full pt-24 ml-4">
+          <div className="mt-2 text-alexRed text-4xl lg:text-5xl font-bold font-heading font-blogh">
             Awards and Press
-          </span>
-          <h2 className="mt-2 text-4xl lg:text-5xl font-bold font-heading">
-            Awards and Press
-          </h2>
+          </div>
         </div>
-        <div className="flex flex-wrap -mx-4 -mb-8">
-          <div className="w-full md:w-1/2 lg:w-1/3 mb-8 px-4">
-            <div>
-              <span className="mr-6 mb-6 flex items-center justify-center w-16 h-16 p-3 border-2 border-sky-500 rounded-full">
-                <img src={ViteSVG} />
-              </span>
-              <h3 className="mb-2 text-2xl font-bold font-heading">
-                Neque porro quisquam est
-              </h3>
-              <ul className="list-inside list-disc leading-loose text-gray-500">
-                <li>
-                  <a className="hover:underline" href="">
-                    Etiam pellentesque non nibh
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">Mauris posuere</a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Tellus sit amet tempus vestibulum
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Erat augue imperdiet neque
-                  </a>
-                </li>
-              </ul>
+        <div className="mb-8 pt-8 w-full">
+          {awardsList.map((award, index) => (
+            <div
+              className="text-alexRed pt-4 pb-6 text-2xl border-b-2 border-alexRed font-roobert"
+              key={index}
+            >
+              {award}
             </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 mb-8 px-4">
-            <div>
-              <span className="mr-6 mb-6 flex items-center justify-center w-16 h-16 p-3 border-2 border-sky-500 rounded-full">
-                <img src={ViteSVG} />
-              </span>
-              <h3 className="mb-2 text-2xl font-bold font-heading">
-                Neque porro quisquam est
-              </h3>
-              <ul className="list-inside list-disc leading-loose text-gray-500">
-                <li>
-                  <a className="hover:underline" href="">
-                    Etiam pellentesque non nibh
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">Mauris posuere</a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Tellus sit amet tempus vestibulum
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Erat augue imperdiet neque
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 mb-8 px-4">
-            <div>
-              <span className="mr-6 mb-6 flex items-center justify-center w-16 h-16 p-3 border-2 border-sky-500 rounded-full">
-                <img src={ViteSVG} />
-              </span>
-              <h3 className="mb-2 text-2xl font-bold font-heading">
-                Neque porro quisquam est
-              </h3>
-              <ul className="list-inside list-disc leading-loose text-gray-500">
-                <li>
-                  <a className="hover:underline" href="">
-                    Etiam pellentesque non nibh
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">Mauris posuere</a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Tellus sit amet tempus vestibulum
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Erat augue imperdiet neque
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 mb-8 px-4">
-            <div>
-              <span className="mr-6 mb-6 flex items-center justify-center w-16 h-16 p-3 border-2 border-sky-500 rounded-full">
-                <img src={ViteSVG} />
-              </span>
-              <h3 className="mb-2 text-2xl font-bold font-heading">
-                Neque porro quisquam est
-              </h3>
-              <ul className="list-inside list-disc leading-loose text-gray-500">
-                <li>
-                  <a className="hover:underline" href="">
-                    Etiam pellentesque non nibh
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">Mauris posuere</a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Tellus sit amet tempus vestibulum
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Erat augue imperdiet neque
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 mb-8 px-4">
-            <div>
-              <span className="mr-6 mb-6 flex items-center justify-center w-16 h-16 p-3 border-2 border-sky-500 rounded-full">
-                <img src={ViteSVG} />
-              </span>
-              <h3 className="mb-2 text-2xl font-bold font-heading">
-                Neque porro quisquam est
-              </h3>
-              <ul className="list-inside list-disc leading-loose text-gray-500">
-                <li>
-                  <a className="hover:underline" href="">
-                    Etiam pellentesque non nibh
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">Mauris posuere</a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Tellus sit amet tempus vestibulum
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Erat augue imperdiet neque
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 mb-8 px-4">
-            <div>
-              <span className="mr-6 mb-6 flex items-center justify-center w-16 h-16 p-3 border-2 border-sky-500 rounded-full">
-                <img src={ViteSVG} />
-              </span>
-              <h3 className="mb-2 text-2xl font-bold font-heading">
-                Neque porro quisquam est
-              </h3>
-              <ul className="list-inside list-disc leading-loose text-gray-500">
-                <li>
-                  <a className="hover:underline" href="">
-                    Etiam pellentesque non nibh
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">Mauris posuere</a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Tellus sit amet tempus vestibulum
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:underline" href="">
-                    Erat augue imperdiet neque
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
